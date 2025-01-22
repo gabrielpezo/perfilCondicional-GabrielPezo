@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Rigo with Vanilla.js</title>
+
+    <!-- Shortcut Icon -->
     <link rel="shortcut icon" href="./assets/img/4geeks.ico" />
+
+    <!-- Font Awesome Kit -->
     <script
       src="https://kit.fontawesome.com/072e5df971.js"
       crossorigin="anonymous"
@@ -12,58 +16,78 @@
   </head>
 
   <body>
+    <!-- Filters Section -->
     <ul class="filters">
+      <!-- Include Cover -->
       <li>
-        <label>Include Cover</label>
-        <select class="picker" for="includeCover">
+        <label for="includeCover">Include Cover</label>
+        <select class="picker" id="includeCover">
           <option value="">Include Cover</option>
           <option value="true">True</option>
           <option value="false">False</option>
         </select>
       </li>
+
+      <!-- Name -->
       <li>
-        <label>Name</label>
-        <input class="picker" for="name" type="text" />
+        <label for="name">Name</label>
+        <input class="picker" id="name" type="text" />
       </li>
+
+      <!-- Last Name -->
       <li>
-        <label>Last Name</label>
-        <input class="picker" for="lastName" type="text" />
+        <label for="lastName">Last Name</label>
+        <input class="picker" id="lastName" type="text" />
       </li>
+
+      <!-- Social Media Position -->
       <li>
-        <label>S.M. Position</label>
-        <select class="picker" for="socialMediaPosition">
+        <label for="socialMediaPosition">S.M. Position</label>
+        <select class="picker" id="socialMediaPosition">
           <option value="position-left">Left</option>
           <option value="position-right">Right</option>
         </select>
       </li>
+
+      <!-- Twitter -->
       <li>
-        <label>Twitter</label>
-        <input class="picker" for="twitter" type="text" />
+        <label for="twitter">Twitter</label>
+        <input class="picker" id="twitter" type="text" />
       </li>
+
+      <!-- Github -->
       <li>
-        <label>Github</label>
-        <input class="picker" for="github" type="text" />
+        <label for="github">Github</label>
+        <input class="picker" id="github" type="text" />
       </li>
+
+      <!-- LinkedIn -->
       <li>
-        <label>LinkedIn</label>
-        <input class="picker" for="linkedin" type="text" />
+        <label for="linkedin">LinkedIn</label>
+        <input class="picker" id="linkedin" type="text" />
       </li>
+
+      <!-- Instagram -->
       <li>
-        <label>Instagram</label>
-        <input class="picker" for="instagram" type="text" />
+        <label for="instagram">Instagram</label>
+        <input class="picker" id="instagram" type="text" />
       </li>
+
+      <!-- Role -->
       <li>
-        <label>Role</label>
-        <select class="picker" for="role">
+        <label for="role">Role</label>
+        <select class="picker" id="role">
           <option value="">null</option>
           <option value="Web Developer">Web Developer</option>
           <option value="Floor Planner">Floor Planner</option>
-          <option value="Technical Writter">Technical Writter</option>
+          <option value="Technical Writer">Technical Writer</option>
         </select>
       </li>
+
+      <!-- City -->
       <li>
-        <label>City</label>
-        <select class="picker" for="city">
+        <label for="city">City</label>
+        <select class="picker" id="city">
           <option value="">null</option>
           <option value="Miami">Miami</option>
           <option value="Munich">Munich</option>
@@ -71,9 +95,11 @@
           <option value="Toronto">Toronto</option>
         </select>
       </li>
+
+      <!-- Country -->
       <li>
-        <label>Country</label>
-        <select class="picker" for="country">
+        <label for="country">Country</label>
+        <select class="picker" id="country">
           <option value="">null</option>
           <option value="USA">USA</option>
           <option value="Germany">Germany</option>
@@ -82,9 +108,11 @@
         </select>
       </li>
     </ul>
+
+    <!-- Widget Content -->
     <div id="widget_content"></div>
 
-    <!-- do not remove this bundle.js tag -->
+    <!-- Main JavaScript Bundle -->
     <script type="text/javascript" src="/main.bundle.js"></script>
   </body>
 </html>
